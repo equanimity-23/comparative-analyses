@@ -1,0 +1,20 @@
+Cox mixed-effects model fit by maximum likelihood
+  Data: miR-33_DCV
+  events, n = 148, 148
+  Iterations= 17 89 
+                    NULL Integrated    Fitted
+Log-likelihood -595.0055  -542.9775 -532.8653
+
+                   Chisq   df p    AIC   BIC
+Integrated loglik 104.06 3.00 0  98.06 89.06
+ Penalized loglik 124.28 7.47 0 109.35 86.97
+
+Model:  Surv(Days, Survival) ~ Mutant + (1 | BiolRep/TechRep) 
+Fixed coefficients
+            coef  exp(coef)  se(coef)     z       p
+Mutant -2.474045 0.08424343 0.3320949 -7.45 9.3e-14
+
+Random effects
+ Group           Variable    Std Dev   Variance 
+ BiolRep/TechRep (Intercept) 0.3649762 0.1332077
+ BiolRep         (Intercept) 0.5437684 0.2956841
